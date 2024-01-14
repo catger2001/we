@@ -1,0 +1,211 @@
+.base {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    /* background-color: #eee; */
+}
+
+.base-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.base-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.base-head, .base-btns {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.base-title {
+    letter-spacing: 10px;
+    font-size: 2rem;
+}
+
+.base-btn {
+    text-decoration: none;
+    border: 2px solid #cf7688;
+    padding: 1rem 3rem;
+    color: #cf7688;
+    border-radius: 5px;
+    transition-duration: .3s;
+    display: inline-block;
+}
+
+.base-btn:hover {
+    background-color: #f6cdd5;
+}
+
+/* service --------------------------------------------------- */
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 33.333%;
+    border: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    padding: 1.5rem 2rem;
+    color: rgba(0, 0, 0, .7);
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+.service-title {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.service-desc {
+    line-height: 1.5;
+    font-size: .95rem;
+    text-align: justify;
+}
+
+.service-icons {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-icons .fa-solid {
+    color: #cf7688;
+}
+
+/* projects ------------------------------------------------------- */
+
+.base-project {
+    background-image: linear-gradient(#f6f6f6 0, #fff 50%);
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgba(255, 255, 255, .7); */
+}
+
+.project-item {
+    width: 20%;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* intro ------------------------------------------------------ */
+
+.base-intro {
+    background-image: url("../images/intro-bg.jpg");
+    background-size: cover;
+    position: relative;
+    /* z-index: -2; */
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100%);
+}
+
+.base-intro::before {
+    content: "ddd";
+    background-color: rgba(0, 0, 0, .7);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.base-intro .base-head, .base-intro .base-btns {
+    text-align: left;
+}
+
+.base-intro .base-title-small, .base-intro .base-title-primary {
+    display: block;
+}
+
+.base-intro .base-title-small {
+    color: #ddd;
+    font-size: 2.5rem;
+}
+
+.base-intro .base-title-primary {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-top: .5rem;
+}
+
+.base-intro .base-title {
+    letter-spacing: 0;
+}
+
+.base-intro .intro-desc {
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
+}
+
+.base-intro .base-btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.base-intro .base-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/* build ------------------------------------------------------------ */
+
+.base-build .base-body {
+    max-width: 600px;
+}
+
+.build-ol {
+    color: rgba(255, 255, 255, .9);
+}
+
+.build-li {
+    padding: 1.5rem 3rem;
+    text-align: center;
+    /* margin: 3rem; */
+    /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); */
+    transform: skewX(-15deg);
+    border-radius: 10px;
+}
+
+.build-li + .build-li {
+    margin-top: 2rem;
+}
+
+.build-content {
+    transform: skewX(15deg);
+}
+
+.build-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.build-desc {
+    margin-top: 1.5rem;
+    line-height: 1.5;
+}
+
+.build-li-1 {
+    background-color: #f5ba54;
+}
+
+.build-li-2 {
+    background-color: #eaa666;
+}
+
+.build-li-3 {
+    background-color: #cf7688;
+}
