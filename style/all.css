@@ -21,6 +21,11 @@ img {
     box-sizing: border-box;
 }
 
+.container-md {
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -126,6 +131,10 @@ img {
     position: relative;
 }
 
+.banner-head, .banner-body {
+    width: 50%;
+}
+
 .banner-title {
     font-size: 2.2rem;
     margin-bottom: 2rem;
@@ -149,7 +158,8 @@ img {
     display: flex;
     font-weight: 600;
     text-transform: uppercase;
-    opacity: .3;
+    /* opacity: .3; */
+    color: rgba(255, 255, 255, .3);
     margin-bottom: 4rem;
 }
 
@@ -157,7 +167,7 @@ img {
     order: -1;
 }
 
-.banner-li + .banner-li {
+.banner-li+.banner-li {
     margin-left: 1rem;
 }
 
@@ -209,15 +219,42 @@ img {
     bottom: -2rem;
 }
 
-/* footer ----------------------------------------------------- */
+.banner-title-line {
+    position: relative;
+}
+
+.banner-title-line::after {
+    content: "";
+    width: 1.5em;
+    border-top: solid 4px rgba(255, 255, 255, .5);
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+}
+
+.banner-desc + .banner-desc {
+    margin-top: 1rem;
+}
+
+.banner-desc-lg {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.banner-img-fit {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* footer -------------------------------- */
 
 .footer {
     background-color: #666;
     display: flex;
     justify-content: space-between;
-    padding: 7rem 1rem 1rem;
-    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
     align-items: flex-end;
+    padding: 8rem 1rem 1rem;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
 }
 
 .footer-img-logo {
@@ -253,7 +290,7 @@ img {
     color: #cf7688;
 }
 
-/* aside ---------------------------------------------- */
+/* aside -------------------------- */
 
 .aside {
     position: fixed;

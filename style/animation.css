@@ -61,3 +61,11 @@
 .ani-zoom-in-active {
   transform: scale(1);
 }
+
+.ani-zoom-out {
+  transform: scale(5);
+}
+
+.ani-zoom-out-active {
+  transform: scale(1);
+}

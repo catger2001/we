@@ -4,7 +4,7 @@ import config from './config.js';
 let index = 0;
 const elems = [...config.targets];
 const breakPoints = elems.map(item => item.offsetTop);
-const aniTypes = ['fadeIn', 'move', 'zoom-in'];
+const aniTypes = ['fadeIn', 'move', 'zoom-in', 'zoom-out'];
 
 function scrollHandler() {
 
