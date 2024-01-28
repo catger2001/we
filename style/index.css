@@ -272,3 +272,42 @@
 .ani-delay-7 {
     animation-delay: 1.4s;
 }
+
+/* rwd ----------------------------------------- */
+
+@media screen and (max-width: 480px) {
+    /* service -------------------------- */
+    .service-items {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: auto;
+    }
+
+    /* intro --------------------------- */
+
+    .base-intro {
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+    }
+
+    .base-intro .base-head, .base-intro .base-btn {
+        text-align: center;
+    }
+
+    .base-service .base-container {
+        padding-right: 1rem;
+    }
+
+    /* project -------------------------- */
+
+    .project-item {
+        width: 33.333%;
+    }
+
+    /* build ---------------------------- */
+
+    .base-build .base-body {
+        max-width: 80vw;
+    }
+}

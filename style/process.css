@@ -8,10 +8,6 @@
     margin-top: 2rem;
 }
 
-.process-item:hover .process-head {
-    background-color: #cf7688;
-}
-
 .process-head {
     background-color: #ddd;
     width: 30%;
@@ -26,9 +22,12 @@
     width: 70%;
 }
 
+.process-name {
+    color: rgba(255, 255, 255, .7);
+}
+
 .process-cht, .process-en {
     display: block;
-    color: rgba(255, 255, 255, .7);
 }
 
 .process-cht {
@@ -36,9 +35,9 @@
 }
 
 .process-en {
-    text-transform: uppercase;
-    font-size: 1.5rem;
     margin-top: .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .process-ol {
@@ -48,14 +47,12 @@
     list-style-position: inside;
 }
 
+
 .process-li {
+    /* border: solid 1px #ccc; */
+    padding: 2rem;
     width: 50%;
     box-sizing: border-box;
-    padding: 2rem;
-}
-
-.process-li:nth-child(n+3) {
-    padding-top: 0;
 }
 
 .process-li::marker {
@@ -63,15 +60,48 @@
     font-size: 1.25rem;
 }
 
+.process-li:nth-child(n+3) {
+    padding-top: 0;
+}
+
 .process-title {
-    color: #cf7688;
-    font-size: 1.25rem;
     display: inline;
+    color: #cf7688;
     font-weight: 600;
+    font-size: 1.25rem;
 }
 
 .process-desc {
     margin-top: .5rem;
-    color: rgba(0, 0, 0, .7);
     line-height: 1.5;
+    color: rgba(0, 0, 0, .7);
+}
+
+.process-item:hover .process-head {
+    background-color: #cf7688;
+}
+
+/* rwd ---------------------------------------- */
+
+@media screen and (max-width: 480px) {
+    .process-item, .process-ol {
+        flex-direction: column;
+    }
+
+    .process-head, .process-body, .process-li {
+        width: auto;
+    }
+
+    .process-head {
+        padding: 1rem;
+    }
+
+    .process-li {
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .process-name {
+        text-align: center;
+    }
 }
